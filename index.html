@@ -40,19 +40,24 @@
   </head>
   <body>
     <!--nav bar-->
-    <nav
-      class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-success py-4"
-    >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <nav class="navbar navbar-expand-lg bg-success py-4">
+      <div class="container position-relative">
+        <!-- Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
           <img
             src="./assets/images/logo-idn-bg.png"
             alt="Logo"
             width="30"
-            class="d-inline-block align-text-top rounded"
+            class="rounded"
           />
-          <span class="fw-bold text-white">IDN E-Report</span>
+
+          <span class="fw-bold text-white"> ANRI E-Report </span>
         </a>
+
+        <!-- Toggle Mobile -->
         <button
           class="navbar-toggler shadow-none"
           type="button"
@@ -64,33 +69,55 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0 text-center">
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 pt-4 pt-lg-0 text-center">
             <li class="nav-item">
-              <a class="nav-link text-success" aria-current="page" href="#hero"
-                >Home</a
+              <a class="nav-link text-white opacity-75" href="tentang.html">
+                Tentang
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-white opacity-75"
+                href="reports.html"
               >
+                Laporan Terbaru
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-white opacity-75" href="#obout">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white opacity-75" href="#servicex"
-                >Service</a
+              <a
+                class="nav-link text-white opacity-75"
+                href="panduan.html"
               >
+                Panduan Pengguna
+              </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-white opacity-75" href="#recent"
-                >Recent</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white opacity-75" href="#faq">FAQ</a>
+              <a class="nav-link text-white opacity-75" href="index.html#faq">
+                FAQ
+              </a>
             </li>
           </ul>
         </div>
+
+        <!-- Kontak -->
+        <a
+          href="kontak.html"
+          class="bg-white py-2 px-3 ms-5 text-success rounded border fw-medium text-decoration-none"
+        >
+          Kontak Kami
+        </a>
       </div>
     </nav>
+
     <!-- hero section -->
     <section id="hero">
       <div class="container">
@@ -102,18 +129,20 @@
           >
             <h1 class="fw-bold">
               Selamat Datang di <br />
-              <span class="text-success"> Aplikasi IDN E-Report 2026</span>
+              <span class="text-success"> Aplikasi ANRI E-Report 2026</span>
               <br />
               Forum Pengaduan
             </h1>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae animi molestias, et numquam ea impedit esse cumque
-              doloremque deserunt. Sequi voluptas rerum libero vitae ea.
+              ANRI E-Report merupakan platform pengaduan yang memudahkan siswa
+              dalam menyampaikan laporan, keluhan, maupun masukan terkait
+              lingkungan sekolah secara praktis dan terstruktur.
             </p>
             <div class="mt-4">
-              <a class="btn btn-success" href="">About Us</a>
-              <a class="btn btn-outline-success" href="">Let's Talk</a>
+              <a class="btn btn-success" href="tentang.html">Tentang Kami</a>
+              <a class="btn btn-outline-success" href="reports.html"
+                >Lihat Laporan</a
+              >
             </div>
           </div>
           <div
@@ -129,14 +158,33 @@
       <div class="container">
         <div class="about row">
           <div class="col text-center">
-            <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-success mb-3">Tentang Kami</h1>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="lh-lg mb-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              cupiditate repellat, culpa nemo vel ad atque quas minima minus
-              sapiente excepturi cumque error saepe libero, nobis unde eaque
-              assumenda tempora?
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="fw-bold text-success mb-3"
+            >
+              Tentang Kami
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              class="lh-lg mb-5"
+            >
+              ANRI E-Report adalah platform digital yang dirancang untuk
+              membantu siswa menyampaikan berbagai pengaduan dan laporan di
+              lingkungan sekolah. Melalui platform ini, setiap laporan dapat
+              disampaikan dengan lebih mudah, jelas, dan terarah sehingga dapat
+              membantu pihak terkait dalam menindaklanjuti permasalahan yang
+              ada.
             </p>
-            <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" src="assets/images/logoabout.png" alt="" />
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              src="assets/images/logoabout.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -146,36 +194,62 @@
     <section id="servicex">
       <div class="container">
         <div>
-          <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-success">Layanan Kami</h1>
-          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            voluptate. Vitae ut aut doloribus dolor architecto eligendi
-            accusantium? Itaque facere cupiditate error explicabo! Quod, alias.
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="fw-bold text-success"
+          >
+            Layanan Kami
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            class="lh-lg"
+          >
+            ANRI E-Report menyediakan beberapa jenis layanan pengaduan untuk
+            membantu siswa menyampaikan berbagai permasalahan yang ditemukan di
+            lingkungan sekolah.
           </p>
         </div>
         <div class="row p-4 p-lg-0 gap-3">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis">
-            <i="fa-solid fa-graduation-cap"></i=>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+            class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
             <h4 class="fw-semibold">Pengaduan Akademik</h4>
             <p class="lh-lg mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolore dicta reiciendis quisquam tempora quis?
+              Laporkan permasalahan yang berkaitan dengan kegiatan pembelajaran,
+              jadwal, tugas, maupun hal lain yang berhubungan dengan akademik.
             </p>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+            class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis"
+          >
             <i class="fa-solid fa-screwdriver-wrench"></i>
             <h4 class="fw-semibold">Pengaduan Fasilitas</h4>
             <p class="lh-lg mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolore dicta reiciendis quisquam tempora quis?
+              Sampaikan laporan mengenai fasilitas sekolah yang rusak, kurang
+              memadai, atau membutuhkan perbaikan.
             </p>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+            class="col bg-success-subtle p-4 rounded border border-success text-success-emphasis"
+          >
             <i class="fa-solid fa-user-secret"></i>
             <h4 class="fw-semibold">Pengaduan anonymous</h4>
             <p class="lh-lg mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolore dicta reiciendis quisquam tempora quis?
+              Sampaikan pengaduan secara anonim apabila kamu ingin menjaga
+              privasi identitas saat membuat laporan.
             </p>
           </div>
         </div>
@@ -186,15 +260,31 @@
     <section id="recent">
       <div class="container">
         <div class="text-end mb-5">
-          <h1 data-aos="fade-up" data-aos-duration="1000" class="fw-bold text-success">Laporan Terbaru</h1>
-          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            voluptate. Vitae ut aut doloribus dolor architecto eligendi
-            accusantium? Itaque facere cupiditate error explicabo! Quod, alias.
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="fw-bold text-success"
+          >
+            Laporan Terbaru
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            class="lh-lg"
+          >
+            Lihat berbagai laporan terbaru yang telah disampaikan melalui ANRI
+            E-Report. Informasi ini membantu meningkatkan kepedulian dan
+            transparansi terhadap kondisi lingkungan sekolah.
           </p>
         </div>
         <div class="row mb-5">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="col-12 col-md-6 col-lg-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+            class="col-12 col-md-6 col-lg-4 mb-4"
+          >
             <div class="card">
               <p
                 style="background-color: rgb(0, 0, 0, 0.3)"
@@ -218,20 +308,28 @@
                   2 day ago.
                 </p>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                  Terdapat beberapa bagian fasilitas kelas yang mengalami
+                  kerusakan dan perlu segera diperbaiki agar kegiatan belajar
+                  dapat berjala nyaman....
                 </p>
-                <a href="#" class="btn btn-success">Selengkapnya...</a>
+                <a href="reports.html" class="btn btn-success"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="col-12 col-md-6 col-lg-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            class="col-12 col-md-6 col-lg-4 mb-4"
+          >
             <div class="card">
               <p
                 style="background-color: rgb(0, 0, 0, 0.3)"
                 class="position-absolute text-white px-3 py-2"
               >
-                Fasilitas
+                Keamanan
               </p>
               <img
                 style="height: 250px; object-fit: cover"
@@ -240,23 +338,31 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Ada malingg</h5>
+                <h5 class="card-title">Laporan Keamanan Sekolah</h5>
                 <p class="mb-4">
                   By:
                   <a class="text-decoration-none text-success" href=""
-                    >anonymous</a
+                    >Anonymous</a
                   >
-                  2 day ago.
+                  5 day ago.
                 </p>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                  Ditemukan permasalahan yang berkaitan dengan keamanan
+                  lingkungan sekolah dan perlu mendapatkan perhatian dari pihak
+                  terkait....
                 </p>
-                <a href="#" class="btn btn-success">Selengkapnya...</a>
+                <a href="reports.html" class="btn btn-success"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="col-12 col-md-6 col-lg-4 mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+            class="col-12 col-md-6 col-lg-4 mb-4"
+          >
             <div class="card">
               <p
                 style="background-color: rgb(0, 0, 0, 0.3)"
@@ -275,22 +381,24 @@
                 <p class="mb-4">
                   By:
                   <a class="text-decoration-none text-success" href=""
-                    >Izyan Ikmal</a
+                    >Deryndut</a
                   >
-                  2 day ago.
+                  1 Hours ago.
                 </p>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                  Beberapa fasilitas di dalam kelas membutuhkan pemeriksaan dan
+                  perbaikan agar dapat digunakan dengan baik....
                 </p>
-                <a href="#" class="btn btn-success">Selengkapnya...</a>
+                <a href="reports.html" class="btn btn-success"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
         </div>
         <a
           class="text-center text-success d-block link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-          href="#"
+          href="reports.html"
         >
           Lebih Banyak <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -300,15 +408,24 @@
     <!-- FAQ Section -->
     <section id="faq">
       <div class="container">
-        <div data-aos="fade-up" data-aos-duration="1000" class="row text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="row text-center"
+        >
           <h1 class="fw-bold text-success">FAQ</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-            deserunt excepturi facilis obcaecati tenetur ipsam praesentium,
-            saepe voluptate quis? Molestiae blanditiis quia sapiente alias in.
+            Temukan jawaban atas pertanyaan yang sering diajukan mengenai
+            penggunaan ANRI E-Report dan proses penyampaian laporan.
           </p>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="accordion mt-4" id="accordionExample">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          class="accordion mt-4"
+          id="accordionExample"
+        >
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="accordion-item">
@@ -321,7 +438,7 @@
                     aria-expanded="true"
                     aria-controls="faq1"
                   >
-                    Accordion Item #1
+                    Apa itu ANRI E-Report?
                   </button>
                 </h2>
                 <div
@@ -330,15 +447,10 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>ANRI E-Report adalah</strong> platform digital yang
+                    digunakan untuk menyampaikan pengaduan, keluhan, dan masukan
+                    terkait lingkungan sekolah secara lebih mudah dan
+                    terstruktur.
                   </div>
                 </div>
               </div>
@@ -354,7 +466,7 @@
                     aria-expanded="true"
                     aria-controls="faq2"
                   >
-                    Accordion Item #1
+                    Siapa yang dapat membuat laporan?
                   </button>
                 </h2>
                 <div
@@ -363,15 +475,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>Siswa dapat menggunakan ANRI E-Report</strong> untuk menyampaikan laporan mengenai permasalahan yang ditemukan di lingkungan sekolah.
+                    terstruktur.
                   </div>
                 </div>
               </div>
@@ -387,7 +492,7 @@
                     aria-expanded="true"
                     aria-controls="faq3"
                   >
-                    Accordion Item #1
+                    Apakah saya bisa membuat laporan secara anonim?
                   </button>
                 </h2>
                 <div
@@ -396,15 +501,7 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>Ya. ANRI E-Report menyediakan</strong> layanan pengaduan anonim sehingga identitas pelapor dapat tetap dirahasiakan.
                   </div>
                 </div>
               </div>
@@ -420,7 +517,7 @@
                     aria-expanded="true"
                     aria-controls="faq4"
                   >
-                    Accordion Item #1
+                    Laporan apa saja yang dapat disampaikan?
                   </button>
                 </h2>
                 <div
@@ -429,15 +526,7 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>Laporan</strong> dapat berkaitan dengan akademik, fasilitas, keamanan, kebersihan, maupun permasalahan lain yang membutuhkan perhatian pihak sekolah.
                   </div>
                 </div>
               </div>
@@ -453,7 +542,7 @@
                     aria-expanded="true"
                     aria-controls="faq5"
                   >
-                    Accordion Item #1
+                    Bagaimana laporan saya ditindaklanjuti?
                   </button>
                 </h2>
                 <div
@@ -462,15 +551,7 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>Laporan</strong> yang masuk akan diperiksa dan diteruskan kepada pihak yang berkaitan agar dapat ditindaklanjuti sesuai dengan jenis permasalahannya.
                   </div>
                 </div>
               </div>
@@ -486,7 +567,7 @@
                     aria-expanded="true"
                     aria-controls="faq6"
                   >
-                    Accordion Item #1
+                    Apakah saya dapat memberikan masukan?
                   </button>
                 </h2>
                 <div
@@ -495,15 +576,7 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body bg-success-subtle text-success">
-                    <strong>This is the first item’s accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It’s also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <strong>Tentu,</strong> Kamu dapat menyampaikan saran dan masukan melalui ANRI E-Report untuk membantu meningkatkan lingkungan dan pelayanan sekolah.
                   </div>
                 </div>
               </div>
@@ -528,8 +601,7 @@
               <h3 class="fw-bold mb-0">E-Report</h3>
             </div>
             <p class="footer-link lh-lg mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Distinctio repudiandae aliquid consequuntur ad amet illum?
+              ANRI E-Report merupakan platform pengaduan digital yang membantu siswa menyampaikan laporan, keluhan, dan masukan untuk menciptakan lingkungan sekolah yang lebih aman, nyaman, dan responsif.
             </p>
           </div>
           <div class="col-md-2 text-white d-flex flex-column gap-2">
@@ -552,7 +624,7 @@
               href=""
             >
               <i class="fa-solid fa-envelope"></i>
-              idnreport@idn.sch.id
+              anrireport@anri.sch.id
             </a>
             <a
               target="_blank"
@@ -596,9 +668,8 @@
 
     <!-- js aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-
 </html>

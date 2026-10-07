@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semua Laporan | E-Report ANRI</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-idn-bg.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-success py-4"
+    >
+      <div class="container position-relative">
+        <!-- Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="./assets/images/logo-idn-bg.png"
+            alt="Logo"
+            width="30"
+            class="rounded"
+          />
+
+          <span class="fw-bold text-white"> ANRI E-Report </span>
+        </a>
+
+        <!-- Toggle Mobile -->
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 pt-4 pt-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="tentang.html">
+                Tentang
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="reports.html">
+                Laporan Terbaru
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="panduan.html">
+                Panduan Pengguna
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="index.html#faq">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <a
+          href="kontak.html"
+          class="bg-white py-2 px-3 ms-5 text-success rounded border fw-medium text-decoration-none"
+        >
+          Kontak Kami
+        </a>
+      </div>
+    </nav>
+
+    <section id="all-reports" class="py-5">
+      <div class="container">
+        <!-- HEADER -->
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between"
+        >
+          <div
+            class="col-lg-8 text-center text-lg-start"
+            data-aos="fade-up"
+          >
+            <h1 class="fw-bold text-success">Semua Laporan</h1>
+
+            <p class="text-muted lh-lg">
+              Lihat berbagai laporan yang telah disampaikan melalui ANRI
+              E-Report. Kamu dapat mencari dan memfilter laporan berdasarkan
+              kategori untuk mengetahui berbagai permasalahan di lingkungan
+              sekolah.
+            </p>
+          </div>
+
+          <div
+            class="col-lg-2"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="btn btn-success fw-medium w-100"
+            >
+              <i class="fa-solid fa-plus me-1"></i>
+              Tambah Laporan
+            </button>
+          </div>
+        </div>
+
+        <!-- FILTER -->
+        <div
+          class="row mt-5 g-3 text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control shadow-sm"
+              placeholder="Cari laporan..."
+            />
+          </div>
+
+          <div class="col-md-3">
+            <select class="form-select">
+              <option value="">Pilih Kategori</option>
+              <option value="akademik">Akademik</option>
+              <option value="fasilitas">Fasilitas</option>
+              <option value="keamanan">Keamanan</option>
+              <option value="kebersihan">Kebersihan</option>
+              <option value="anonim">Anonim</option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <select class="form-select">
+              <option value="">Urutkan</option>
+              <option value="terbaru">Terbaru</option>
+              <option value="terlama">Terlama</option>
+              <option value="populer">Paling Banyak Dilihat</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <button class="btn btn-success w-100">
+              <i class="fa-solid fa-filter me-1"></i>
+              Filter
+            </button>
+          </div>
+        </div>
+
+        <!-- =========================
+             DAFTAR LAPORAN
+        ========================== -->
+        <div class="row mb-3 mt-5">
+          <!-- LAPORAN 1 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Fasilitas
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Kelas rusak"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Laporan Kelas Rusak</h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <a class="text-decoration-none text-success" href="#">
+                    Fabianux
+                  </a>
+                  · 2 days ago
+                </p>
+
+                <p class="card-text">
+                  Terdapat beberapa bagian fasilitas kelas yang mengalami
+                  kerusakan dan perlu segera diperbaiki agar kegiatan belajar
+                  dapat berjalan dengan nyaman.
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAPORAN 2 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Fasilitas
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Kebersihan lingkungan sekolah"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Laporan Kursi Rusak di Dalam Kelas</h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <a class="text-decoration-none text-success" href="#">
+                    Derry Ramadhani
+                  </a>
+                  · 2 days ago
+                </p>
+
+                <p class="card-text">
+                  Terdapat beberapa kursi di dalam kelas yang mengalami
+                  kerusakan sehingga tidak dapat digunakan dengan baik....
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAPORAN 3 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Anonim
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Laporan keamanan sekolah"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Laporan Keamanan Sekolah</h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <span class="text-success"> Anonim </span>
+                  · 2 days ago
+                </p>
+
+                <p class="card-text">
+                  Ditemukan permasalahan yang berkaitan dengan keamanan
+                  lingkungan sekolah dan perlu mendapatkan perhatian dari pihak
+                  terkait.
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAPORAN 4 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Akademik
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Kegiatan pembelajaran"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Kendala Kegiatan Pembelajaran</h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <a class="text-decoration-none text-success" href="#">
+                    Fabianux
+                  </a>
+                  · 3 days ago
+                </p>
+
+                <p class="card-text">
+                  Laporan mengenai kendala dalam kegiatan pembelajaran yang
+                  dapat mengganggu kenyamanan dan kelancaran proses belajar
+                  siswa.
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAPORAN 5 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Fasilitas
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Fasilitas kelas"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Fasilitas Kelas Membutuhkan Perbaikan
+                </h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <a class="text-decoration-none text-success" href="#">
+                    Fabianux
+                  </a>
+                  · 3 days ago
+                </p>
+
+                <p class="card-text">
+                  Beberapa fasilitas di dalam kelas membutuhkan pemeriksaan dan
+                  perbaikan agar dapat digunakan dengan baik untuk mendukung
+                  kegiatan belajar.
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LAPORAN 6 -->
+          <div
+            class="col-12 col-md-6 mb-4 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm">
+              <p
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="position-absolute text-light px-3 py-2 mb-0"
+              >
+                Anonim
+              </p>
+
+              <img
+                style="height: 400px; object-fit: cover"
+                src="./assets/images/kelasrusak.jpg"
+                class="card-img-top"
+                alt="Kondisi lingkungan sekolah"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Laporan Kenyamanan Lingkungan</h5>
+
+                <p class="mb-4 text-muted">
+                  By:
+                  <span class="text-success"> Anonim </span>
+                  · 4 days ago
+                </p>
+
+                <p class="card-text">
+                  Laporan mengenai kondisi lingkungan sekolah yang perlu
+                  diperhatikan agar seluruh siswa dapat beraktivitas dengan
+                  lebih nyaman.
+                </p>
+
+                <a href="details-report.html" class="btn btn-success">
+                  Baca Selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <nav
+          aria-label="Navigasi halaman"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <ul class="pagination justify-content-center mt-5">
+            <li class="page-item disabled">
+              <a class="page-link" href="#"> Sebelumnya </a>
+            </li>
+
+            <li class="page-item active">
+              <a class="page-link bg-success border-success" href="#"> 1 </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-success" href="#"> 2 </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-success" href="#"> 3 </a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link text-success" href="#"> Selanjutnya </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- =========================
+         MODAL TAMBAH LAPORAN
+    ========================== -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <!-- MODAL HEADER -->
+          <div class="modal-header bg-success text-white">
+            <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">
+              <i class="fa-solid fa-pen-to-square me-2"></i>
+              Buat Laporan
+            </h1>
+
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+
+          <!-- FORM -->
+          <form action="">
+            <div class="modal-body p-4 p-md-5">
+              <!-- JUDUL -->
+              <div class="mb-4">
+                <label class="form-label fw-semibold"> Judul Laporan </label>
+
+                <input
+                  class="form-control shadow-sm"
+                  type="text"
+                  name="judul"
+                  placeholder="Contoh: Kelas membutuhkan perbaikan"
+                  required
+                />
+              </div>
+
+              <!-- KATEGORI -->
+              <div class="mb-4">
+                <label class="form-label fw-semibold"> Pilih Kategori </label>
+
+                <select class="form-select shadow-sm" name="kategori" required>
+                  <option value="">Pilih kategori...</option>
+
+                  <option value="akademik">Akademik</option>
+
+                  <option value="fasilitas">Fasilitas</option>
+
+                  <option value="keamanan">Keamanan</option>
+
+                  <option value="kebersihan">Kebersihan</option>
+
+                  <option value="anonim">Anonim</option>
+                </select>
+              </div>
+
+              <!-- ISI LAPORAN -->
+              <div class="mb-4">
+                <label class="form-label fw-semibold"> Isi Laporan </label>
+
+                <textarea
+                  rows="6"
+                  class="form-control shadow-sm"
+                  name="laporan"
+                  placeholder="Jelaskan permasalahan yang ingin kamu laporkan..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- GAMBAR -->
+              <div class="mb-4">
+                <label class="form-label fw-semibold"> Upload Gambar </label>
+
+                <input
+                  type="file"
+                  class="form-control"
+                  accept="image/*"
+                  name="gambar"
+                />
+
+                <div class="form-text">
+                  Tambahkan gambar sebagai bukti atau pendukung laporan jika
+                  diperlukan.
+                </div>
+              </div>
+            </div>
+
+            <!-- MODAL FOOTER -->
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary">Reset</button>
+
+              <button type="submit" class="btn btn-success">
+                <i class="fa-solid fa-paper-plane me-2"></i>
+                Kirim Laporan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-success py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-between row-gap-4 row-gap-md-0">
+          <!-- BRAND -->
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <img
+                class="rounded"
+                src="./assets/images/logo-idn-bg.png"
+                width="30"
+                alt="Logo E-Report"
+              />
+
+              <h3 class="fw-bold mb-0">E-Report</h3>
+            </div>
+
+            <p class="footer-link lh-lg mb-0">
+              ANRI E-Report merupakan platform pengaduan digital yang membantu
+              siswa menyampaikan laporan, keluhan, dan masukan untuk menciptakan
+              lingkungan sekolah yang lebih aman, nyaman, dan responsif.
+            </p>
+          </div>
+
+          <!-- MENU -->
+          <div class="col-md-2 text-white d-flex flex-column gap-2">
+            <h4 class="fw-bold">Menu</h4>
+
+            <a class="text-decoration-none footer-link" href="index.html#hero">
+              Home
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#obout">
+              Tentang
+            </a>
+
+            <a
+              class="text-decoration-none footer-link"
+              href="index.html#servicex"
+            >
+              Layanan
+            </a>
+
+            <a
+              class="text-decoration-none footer-link"
+              href="index.html#recent"
+            >
+              Laporan Terkini
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#faq">
+              FAQ
+            </a>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="col-md-4 d-flex flex-column gap-2">
+            <h4 class="fw-bold text-white">Kontak Kami</h4>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="mailto:anrireport@anri.sch.id"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              anrireport@anri.sch.id
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://wa.me/6281996220909"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              +62 819-9622-0909
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://maps.google.com/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Jl. Dayeuh Rumah Yerry, Pluit, Jakut, Jakarta
+            </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="copyright text-white text-center">
+          <p class="mb-0">
+            &copy; Copyright by
+            <span class="fw-bold"> E-Report </span>
+            2026, All right reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+         BOOTSTRAP JS
+    ========================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
+  </body>
+</html> 

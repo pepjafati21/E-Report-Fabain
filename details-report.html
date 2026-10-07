@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detail Laporan | E-Report ANRI</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-idn-bg.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- navbat -->
+    <nav
+      class="navbar navbar-expand-lg bg-success py-4"
+    >
+      <div class="container position-relative">
+        <!-- Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="./assets/images/logo-idn-bg.png"
+            alt="Logo"
+            width="30"
+            class="rounded"
+          />
+
+          <span class="fw-bold text-white"> ANRI E-Report </span>
+        </a>
+
+        <!-- Toggle Mobile -->
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 pt-4 pt-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="tentang.html">
+                Tentang
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="reports.html">
+                Laporan Terbaru
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="panduan.html">
+                Panduan Pengguna
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="index.html#faq">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <a
+          href="kontak.html"
+          class="bg-white py-2 px-3 ms-5 text-success rounded border fw-medium text-decoration-none"
+        >
+          Kontak Kami
+        </a>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row gap-5 gap-lg-0">
+        <div class="col-lg-8">
+          <!-- Breadcrumb Mobile -->
+          <nav
+            class="mt-3 mb-5 d-lg-none"
+            aria-label="breadcrumb"
+            data-aos="fade-up"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="text-success text-decoration-none" href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="breadcrumb-item">
+                <a
+                  class="text-success text-decoration-none"
+                  href="reports.html"
+                >
+                  Semua Laporan
+                </a>
+              </li>
+
+              <li class="breadcrumb-item active" aria-current="page">
+                Detail Laporan
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Judul -->
+          <h1
+            class="fw-bold text-success"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Laporan Kursi Rusak di Dalam Kelas
+          </h1>
+
+          <!-- Informasi Pelapor -->
+          <p
+            class="text-secondary mt-3"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            By
+            <a class="text-decoration-none fw-semibold text-success" href="#">
+              Derry Ramadhani
+            </a>
+            <span class="mx-1">|</span>
+            2 jam yang lalu
+          </p>
+
+          <!-- Gambar Laporan -->
+          <div
+            class="mb-4"
+            style="height: 400px; overflow: hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./assets/images/kelasrusak.jpg"
+              class="img-fluid rounded w-100"
+              alt="Kursi rusak di dalam kelas"
+            />
+          </div>
+
+          <!-- Isi Laporan -->
+          <div data-aos="fade-up" data-aos-delay="250">
+            <p class="lh-lg mb-4">
+              Terdapat beberapa kursi di dalam kelas yang mengalami kerusakan
+              sehingga tidak dapat digunakan dengan baik. Kondisi tersebut
+              membuat beberapa siswa kesulitan mendapatkan tempat duduk yang
+              nyaman selama kegiatan pembelajaran berlangsung.
+            </p>
+
+            <p class="lh-lg mb-4">
+              Kerusakan pada fasilitas kelas diharapkan dapat segera diperiksa
+              dan diperbaiki agar kegiatan belajar mengajar dapat berjalan
+              dengan nyaman serta fasilitas sekolah dapat digunakan sebagaimana
+              mestinya.
+            </p>
+          </div>
+
+          <!-- Kutipan -->
+          <blockquote
+            class="border-3 border-start border-success p-3 fst-italic text-secondary"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Fasilitas yang baik membantu menciptakan lingkungan belajar yang
+            nyaman bagi seluruh siswa.
+          </blockquote>
+
+          <hr class="my-4" />
+
+          <!-- Komentar -->
+          <div data-aos="fade-up" data-aos-delay="350">
+            <h4 class="fw-semibold">Berikan Komentar</h4>
+
+            <p class="text-secondary">
+              Sampaikan tanggapan atau informasi tambahan yang berkaitan dengan
+              laporan ini.
+            </p>
+
+            <form action="">
+              <div>
+                <textarea
+                  class="form-control shadow-none"
+                  rows="5"
+                  placeholder="Tulis komentar kamu..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success mt-3 py-2 px-5">
+                Kirim
+                <i class="fa-solid fa-paper-plane ms-1"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+        <div class="col-lg-4">
+          <!-- Breadcrumb Desktop -->
+          <nav
+            class="mt-3 mb-5 d-none d-lg-block"
+            aria-label="breadcrumb"
+            data-aos="fade-left"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="text-success text-decoration-none" href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="breadcrumb-item">
+                <a
+                  class="text-success text-decoration-none"
+                  href="reports.html"
+                >
+                  Semua Laporan
+                </a>
+              </li>
+
+              <li class="breadcrumb-item active" aria-current="page">
+                Detail Laporan
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Laporan Terkait -->
+          <div
+            class="card mt-5 shadow-sm"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="card-header fw-bold">Laporan Terkait</div>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="#" class="text-decoration-none text-dark">
+                  <i class="fa-solid fa-chevron-right text-success me-3"></i>
+                  Fasilitas Kelas Rusak
+                </a>
+              </li>
+
+              <li class="list-group-item">
+                <a href="#" class="text-decoration-none text-dark">
+                  <i class="fa-solid fa-chevron-right text-success me-3"></i>
+                  AC Kelas Tidak Berfungsi
+                </a>
+              </li>
+
+              <li class="list-group-item">
+                <a href="#" class="text-decoration-none text-dark">
+                  <i class="fa-solid fa-chevron-right text-success me-3"></i>
+                  Kondisi Kelas Kurang Nyaman
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kategori -->
+          <div
+            class="card mt-4 shadow-sm"
+            data-aos="fade-left"
+            data-aos-delay="250"
+          >
+            <div class="card-header fw-bold">Kategori Laporan</div>
+
+            <div class="card-body">
+              <span class="badge text-bg-success"> Fasilitas </span>
+
+              <span class="badge text-bg-danger"> Laporan </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-success py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-between row-gap-4 row-gap-md-0">
+          <!-- BRAND -->
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <img
+                class="rounded"
+                src="./assets/images/logo-idn-bg.png"
+                width="30"
+                alt="Logo E-Report"
+              />
+
+              <h3 class="fw-bold mb-0">E-Report</h3>
+            </div>
+
+            <p class="footer-link lh-lg mb-0">
+              ANRI E-Report merupakan platform pengaduan digital yang membantu
+              siswa menyampaikan laporan, keluhan, dan masukan untuk menciptakan
+              lingkungan sekolah yang lebih aman, nyaman, dan responsif.
+            </p>
+          </div>
+
+          <!-- MENU -->
+          <div class="col-md-2 text-white d-flex flex-column gap-2">
+            <h4 class="fw-bold">Menu</h4>
+
+            <a class="text-decoration-none footer-link" href="index.html#hero">
+              Home
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#obout">
+              Tentang
+            </a>
+
+            <a
+              class="text-decoration-none footer-link"
+              href="index.html#servicex"
+            >
+              Layanan
+            </a>
+
+            <a class="text-decoration-none footer-link" href="reports.html">
+              Laporan Terkini
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#faq">
+              FAQ
+            </a>
+          </div>
+
+          <!-- KONTAK -->
+          <div class="col-md-4 d-flex flex-column gap-2">
+            <h4 class="fw-bold text-white">Kontak Kami</h4>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="mailto:anrireport@anri.sch.id"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              anrireport@anri.sch.id
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://wa.me/6281996220909"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              +62 819-9622-0909
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://maps.google.com/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Jl. Dayeuh Rumah Yerry, Pluit, Jakut, Jakarta
+            </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="copyright text-white text-center">
+          <p class="mb-0">
+            &copy; 2026
+            <span class="fw-bold"> E-Report </span>
+            . All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootsrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>

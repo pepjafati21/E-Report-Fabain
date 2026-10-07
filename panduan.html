@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Panduan Pengguna | E-Report IDN</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-idn-bg.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- CSS tambahan -->
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+
+      .guide-hero {
+        padding: 100px 0 70px;
+      }
+
+      .guide-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+      }
+
+      .step-number {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .guide-card {
+        transition: 0.3s ease;
+      }
+
+      .guide-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .step-line {
+        border-left: 2px dashed #198754;
+      }
+
+      .footer-link {
+        color: rgba(255, 255, 255, 0.75);
+        transition: 0.3s;
+      }
+
+      .footer-link:hover {
+        color: white;
+      }
+
+      .copyright {
+        margin-top: 70px;
+        padding-top: 25px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success py-4">
+      <div class="container position-relative">
+        <!-- Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img
+            src="./assets/images/logo-idn-bg.png"
+            alt="Logo"
+            width="30"
+            class="rounded"
+          />
+
+          <span class="fw-bold text-white"> ANRI E-Report </span>
+        </a>
+
+        <!-- Toggle Mobile -->
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 pt-4 pt-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="tentang.html">
+                Tentang
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="reports.html">
+                Laporan Terbaru
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="panduan.html">
+                Panduan Pengguna
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white opacity-75" href="index.html#faq">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <a
+          href="kontak.html"
+          class="bg-white py-2 px-3 ms-5 text-success rounded border fw-medium text-decoration-none"
+        >
+          Kontak Kami
+        </a>
+      </div>
+    </nav>
+
+    <section id="steps" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h1 class="fw-bold text-success">Tata Cara Penggunaan</h1>
+
+          <p class="text-secondary lh-lg">
+            Berikut langkah-langkah untuk membuat laporan melalui ANRI E-Report.
+          </p>
+        </div>
+
+        <!-- Step 1 -->
+        <div
+          class="row justify-content-center mb-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-bold"
+              >
+                1
+              </div>
+
+              <div class="pb-4 step-line ps-4">
+                <h4 class="fw-semibold">Pilih Jenis Pengaduan</h4>
+
+                <p class="text-secondary lh-lg">
+                  Tentukan jenis pengaduan yang sesuai dengan permasalahan yang
+                  ingin kamu laporkan.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-success-subtle text-success px-3 py-2">
+                    <i class="fa-solid fa-graduation-cap me-1"></i>
+                    Akademik
+                  </span>
+
+                  <span class="badge bg-success-subtle text-success px-3 py-2">
+                    <i class="fa-solid fa-screwdriver-wrench me-1"></i>
+                    Fasilitas
+                  </span>
+
+                  <span class="badge bg-success-subtle text-success px-3 py-2">
+                    <i class="fa-solid fa-user-secret me-1"></i>
+                    Anonymous
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div
+          class="row justify-content-center mb-4"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-semibold"
+              >
+                2
+              </div>
+
+              <div class="pb-4 step-line ps-4">
+                <h4 class="fw-semibold">Isi Formulir Laporan</h4>
+
+                <p class="text-secondary lh-lg">
+                  Isi semua informasi yang diperlukan pada formulir laporan.
+                  Tuliskan judul dan deskripsi permasalahan dengan jelas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div
+          class="row justify-content-center mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-semibold"
+              >
+                3
+              </div>
+
+              <div class="pb-4 step-line ps-4">
+                <h4 class="fw-semibold">Tambahkan Bukti Pendukung</h4>
+
+                <p class="text-secondary lh-lg">
+                  Jika laporan membutuhkan bukti, unggah foto atau dokumen
+                  pendukung yang relevan dengan laporan yang dibuat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div
+          class="row justify-content-center mb-4"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-semibold"
+              >
+                4
+              </div>
+
+              <div class="pb-4 step-line ps-4">
+                <h4 class="fw-semibold">Periksa Kembali Laporan</h4>
+
+                <p class="text-secondary lh-lg">
+                  Pastikan seluruh informasi yang kamu masukkan sudah benar
+                  sebelum laporan dikirim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div
+          class="row justify-content-center mb-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-semibold"
+              >
+                5
+              </div>
+
+              <div class="pb-4 step-line ps-4">
+                <h4 class="fw-semibold">Kirim Laporan</h4>
+
+                <p class="text-secondary lh-lg">
+                  Setelah semua data sudah sesuai, klik tombol kirim untuk
+                  mengirimkan laporan kepada pihak yang bertanggung jawab.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="350"
+        >
+          <div class="col-lg-9">
+            <div class="d-flex gap-4">
+              <div
+                class="step-number bg-success text-white rounded-circle fw-semibold"
+              >
+                6
+              </div>
+
+              <div class="ps-4">
+                <h4 class="fw-semibold">Pantau Laporan</h4>
+
+                <p class="text-secondary lh-lg">
+                  Setelah laporan dikirim, kamu dapat memantau perkembangan
+                  laporan melalui sistem sesuai dengan fitur yang tersedia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anonymous Report -->
+    <section class="py-5">
+      <div class="container">
+        <div
+          class="bg-success rounded-4 p-4 p-md-5 text-white text-center text-lg-start"
+          data-aos="fade-up"
+        >
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div
+                  class="bg-white text-success rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 55px; height: 55px"
+                >
+                  <i class="fa-solid fa-user-secret fs-4"></i>
+                </div>
+
+                <h3 class="fw-semibold mb-0">
+                  Ingin Melapor Secara Anonymous?
+                </h3>
+              </div>
+
+              <p class="lh-lg mb-0 opacity-75">
+                Gunakan fitur pengaduan anonymous apabila kamu ingin
+                menyampaikan laporan tanpa menampilkan identitas secara terbuka.
+                Tetap pastikan laporan yang diberikan berdasarkan kejadian yang
+                benar.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-4 text-lg-end text-center"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              <a
+                href="./index.html#servicex"
+                class="btn btn-light text-success fw-semibold px-4 py-2"
+              >
+                Lihat Layanan
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="py-5 bg-light mb-4">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-semibold text-success">Tips Membuat Laporan</h2>
+
+          <p class="text-secondary">
+            Agar laporan lebih mudah diproses dan ditindaklanjuti.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-success-subtle border border-success rounded-4 p-4 h-100"
+            >
+              <h5 class="fw-semibold text-success">
+                <i class="fa-solid fa-check me-2"></i>
+                Gunakan bahasa yang jelas
+              </h5>
+
+              <p class="text-secondary lh-lg mb-0">
+                Hindari penggunaan kata-kata yang membingungkan dan jelaskan
+                kejadian sesuai fakta.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-success-subtle border border-success rounded-4 p-4 h-100"
+            >
+              <h5 class="fw-semibold text-success">
+                <i class="fa-solid fa-check me-2"></i>
+                Sertakan lokasi kejadian
+              </h5>
+
+              <p class="text-secondary lh-lg mb-0">
+                Tuliskan lokasi atau tempat terjadinya masalah agar laporan
+                lebih mudah ditindaklanjuti.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="bg-success-subtle border border-success rounded-4 p-4 h-100"
+            >
+              <h5 class="fw-semibold text-success">
+                <i class="fa-solid fa-check me-2"></i>
+                Gunakan bukti yang relevan
+              </h5>
+
+              <p class="text-secondary lh-lg mb-0">
+                Pastikan foto atau dokumen yang dilampirkan berkaitan dengan
+                laporan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="bg-success-subtle border border-success rounded-4 p-4 h-100"
+            >
+              <h5 class="fw-semibold text-success">
+                <i class="fa-solid fa-check me-2"></i>
+                Jangan membuat laporan palsu
+              </h5>
+
+              <p class="text-secondary lh-lg mb-0">
+                Gunakan sistem pengaduan secara bijak dan bertanggung jawab.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+         <footer class="bg-success py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row justify-content-between row-gap-4 row-gap-md-0">
+          <!-- BRAND -->
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center mb-2 gap-2">
+              <img
+                class="rounded"
+                src="./assets/images/logo-idn-bg.png"
+                width="30"
+                alt="Logo E-Report"
+              />
+
+              <h3 class="fw-bold mb-0">E-Report</h3>
+            </div>
+
+            <p class="footer-link lh-lg mb-0">
+              ANRI E-Report merupakan platform pengaduan digital yang membantu
+              siswa menyampaikan laporan, keluhan, dan masukan untuk menciptakan
+              lingkungan sekolah yang lebih aman, nyaman, dan responsif.
+            </p>
+          </div>
+
+          <!-- MENU -->
+          <div class="col-md-2 text-white d-flex flex-column gap-2">
+            <h4 class="fw-bold">Menu</h4>
+
+            <a class="text-decoration-none footer-link" href="index.html#hero">
+              Home
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#obout">
+              Tentang
+            </a>
+
+            <a
+              class="text-decoration-none footer-link"
+              href="index.html#servicex"
+            >
+              Layanan
+            </a>
+
+            <a class="text-decoration-none footer-link" href="reports.html">
+              Laporan Terkini
+            </a>
+
+            <a class="text-decoration-none footer-link" href="index.html#faq">
+              FAQ
+            </a>
+          </div>
+
+          <!-- KONTAK -->
+          <div class="col-md-4 d-flex flex-column gap-2">
+            <h4 class="fw-bold text-white">Kontak Kami</h4>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="mailto:anrireport@anri.sch.id"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              anrireport@anri.sch.id
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://wa.me/6281996220909"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              +62 819-9622-0909
+            </a>
+
+            <a
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-2"
+              href="https://maps.google.com/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Jl. Dayeuh Rumah Yerry, Pluit, Jakut, Jakarta
+            </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="copyright text-white text-center">
+          <p class="mb-0">
+            &copy; 2026
+            <span class="fw-bold"> E-Report </span>
+            . All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>
